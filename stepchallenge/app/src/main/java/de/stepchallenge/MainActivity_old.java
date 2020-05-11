@@ -1,4 +1,4 @@
-package de.e.stepchallenge;
+package de.stepchallenge;
 
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.List;
 import java.util.StringTokenizer;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity_old extends AppCompatActivity {
     private SensorManager sensorManager;
     private TextView stepText;
     private TextView sensorText;
