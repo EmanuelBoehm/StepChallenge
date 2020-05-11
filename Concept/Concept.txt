@@ -1,0 +1,31 @@
+Was soll die App koennen?
+Was sind moegliche Erweiterungen?
+Kompatibilitaet mit vers. Handys? (testen)
+Testleuten finden!
+Cloudspeicher fuer Daten!
+Wie soll sie aussehen?
+Veroeffentlichen?
+
+
+Was soll die App koennen?
+-Schritte zaehlen
+-Freundesystem
+-Accountsystem
+-Daten von anderen einsehen koennen?
+  -Statistiken etc.
+-Challenges starten(mit mehreren?)
+  -Presets, Custom
+-Auf Energieeffizienz achten!
+
+
+Was sind moegliche Erweiterungen?
+-Emoji verfuegbarkeit (Sticker?)
+-Map, die Laufwege aufzeichnet
+  -zusammen laufen
+  -Standort von Freunden sehen
+-Export auf PC
+-Daten im Account statt Lokal speichern
+-Gescheite Verschluesselung
+-Erweiterte Statistik
+ -Punktesystem
+
