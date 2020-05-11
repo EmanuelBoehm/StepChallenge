@@ -1,6 +1,9 @@
 package de.stepchallenge;
 
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -12,10 +15,28 @@ import androidx.navigation.ui.NavigationUI;
 
 public class MainActivity extends AppCompatActivity {
 
+    private StepListener stepListener;
+    private SensorManager sensorManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
+        initGUI();
+
+        sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
+        stepListener = new StepListener();
+        Sensor sensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER);
+
+        if (sensor != null) {
+            sensorManager.registerListener(stepListener, sensor,
+                    SensorManager.SENSOR_DELAY_NORMAL);
+            Log.i("Compass MainActivity", "Registerered for ORIENTATION Sensor");
+        }
+    }
+
+    private void initGUI() {
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.

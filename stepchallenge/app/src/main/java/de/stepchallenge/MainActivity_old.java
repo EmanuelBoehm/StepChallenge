@@ -4,9 +4,12 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
+
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.List;
@@ -77,7 +80,7 @@ public class MainActivity_old extends AppCompatActivity {
             realSteps += event.values[0] - this.steps;
             steps = event.values[0];
         }
-        public int getSteps(){
+        int getSteps(){
             return (int) realSteps;
         }
 
