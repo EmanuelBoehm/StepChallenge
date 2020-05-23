@@ -1,4 +1,4 @@
-package de.stepchallenge;
+package com.example.stepchallenge;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("de.stepchallenge", appContext.getPackageName());
+        assertEquals("com.example.stepchallenge", appContext.getPackageName());
     }
 }

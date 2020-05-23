@@ -1,4 +1,4 @@
-package de.stepchallenge;
+package com.example.stepchallenge;
 
 import org.junit.Test;
 
